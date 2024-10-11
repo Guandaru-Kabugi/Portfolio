@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} About {% endblock title %}
+
+{% block content %}
+<div class="row my-4">
+    <div class="col-4 d-flex justify-content-center align-items-center">
+        <img src="{% static 'images/myimage.jpg' %}" alt="image" class="about_image">
+    </div>
+    <div class="col-7 text-left text-light">
+        <h2>Hello! </h2>
+        <p class="fs-5">
+            I have a diverse background encompassing skills that include python programming, efficient use of django and django rest framework, MySQL and SQLITE databases, and Git operations.
+        </p>
+        <p class="fs-5">
+            As a Backend Web Developer, I focus my attention towards creating efficient APIs that meet the needs of my clients,
+            essential authentication capabilities, securing user access and data access to ensure its integrity,
+            and providing an easy way for the front-end integration of my applications.
+        </p>
+        <p class="fs-5">
+            I have a strong understanding of key Python syntax, concepts, and also some of the best practices when it comes to Python Programming and use of Django Framework.
+        </p>
+    </div>
+</div>
+<div class="row my-2">
+    <h2 class="text-center" style="color:#4fffb0">My Tech Stack</h2>
+    <div class="d-flex justify-content-around align-items-center">
+        
+    <img src="{% static 'images/python.png' %}" alt="python logo" 
+    width="70" height="70" class="img-fluid">
+
+    <img src="{% static 'images/django.png' %}" alt="django logo" 
+    width="70" height="70" class="img-fluid">
+
+    <img src="{% static 'images/mysql.png' %}" alt="mysql logo" 
+    width="70" height="70" class="img-fluid">
+
+    <img src="{% static 'images/sqlite.png' %}" alt="sqlite logo" 
+    width="70" height="70" class="img-fluid">
+
+    <img src="{% static 'images/git.png' %}" alt="git logo" 
+    width="70" height="70" class="img-fluid">
+
+    <img src="{% static 'images/djangorest.png' %}" alt="djangorest logo" 
+    width="200" height="200" class="img-fluid">
+    </div>
+</div>
+{% endblock content %}

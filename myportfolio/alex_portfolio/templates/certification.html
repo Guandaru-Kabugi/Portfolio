@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Certification {% endblock title %}
+
+{% block content %}
+    <div class="row">
+        {% for certificate in certificates %}
+        <div class="jumbtron jumbtron-fluid mt-2">
+            <h1 class="display4">Certificate Name: {{certificate.name}}</h1>
+            <p class="lead">Institution: {{certificate.issuer}}</p>
+            <p class="lead">Date Awared: {{certificate.issue_date}}</p>
+
+
+        {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Services {% endblock title %}
+
+{% block content %}
+    <div class='text-center-custom2 my-4 '>
+        <h1> Services I Can Provide</h1>
+        <div class="row justify-content-center">
+        <div class="col-4">
+            <h2 class="custom-color"> API Development </h2>
+            <img src="{% static 'images/api.png' %}" alt="api development" 
+            width="300" height="200",class="img-fluid">
+        </div>
+        <div class="col-4">
+            <h2 class="custom-color"> Database Management </h2>
+            <img src="{% static 'images/database.png' %}" alt="Database Management" 
+            width="300" height="200",class="img-fluid">
+        </div>
+        <div class="col-4 my-">
+            <h2 class="custom-color"> Web Development </h2>
+            <img src="{% static 'images/web.png' %}" alt="Web Development" 
+            width="300" height="200",class="img-fluid">
+        </div>
+    </div>
+</div>
+{% endblock content %}

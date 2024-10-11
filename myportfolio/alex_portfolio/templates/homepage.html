@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Welcome to the Homepage {% endblock title %}
+
+{% block content %}
+<div class="row my-5">
+    <div class="col-12 d-flex justify-content-center align-items-center">
+
+    
+        <div class="circular-image-container">
+            <img class= "circular-image" src="{% static 'images/myimage.jpg' %}" alt="Image">
+        </div>
+
+
+</div>
+            <div class="col-12 text-center mt-3">
+                <h4 class="title"> Hello! My name is </h4>
+                
+                    <h1 class="names"> Alex Kabugi Guandaru</h1>
+                <div class="name">
+                    <h1>I am a Backend Web Developer</h1>
+                </div>
+            </div>
+        <div class="col-12 text-center mt-3">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="https://www.linkedin.com/in/alex-kabugi-b14b70150/" target="_blank" class="ms-3">
+                        <img src="{% static 'images/linkedin.png' %}" alt="images/linkedin.png" 
+                        width="50" height="50" class="socials">
+                    </a>
+                    <a href="https://github.com/Guandaru-Kabugi" target="_blank" class="ms-3">
+                        <img src="{% static 'images/github.png' %}" alt="images/github.png" 
+                        width="50" height="50" class="socials">
+                    </a>
+                    <a href="https://x.com/kabugialex76" target="_blank" class="ms-3">
+                        <img src="{% static 'images/twitter.png' %}" alt="images/twitter.png" 
+                        width="50" height="50" class="socials">
+                    </a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
