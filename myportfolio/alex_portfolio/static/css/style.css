@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(20,0,30);
+    background-color: black;
 }
 .navbar-nav .nav-link:hover{
     font-weight:bold;
@@ -7,12 +7,13 @@ body{
 }
 .navbar-nav .nav-link{
     font-size: 20px;
+    color: white;
 }
 .navbar-brand{
     font-size: 25px;
 }
 .navbar-dark{
-    background-color: rgb(18,1,46);
+    background-color: blue;
 }
 
 .circular-image-container{
@@ -50,10 +51,8 @@ body{
     align-items: center;
 }
 .about_image{
-    width: 200px;
+    width: 300px;
     height: auto;
-
-    display: block;
 }
 .titles{
     color: white;
