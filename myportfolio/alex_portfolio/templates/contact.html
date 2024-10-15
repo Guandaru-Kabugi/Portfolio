@@ -3,12 +3,12 @@
 {% block title %} Contact {% endblock title %}
 
 {% block content %}
-    <div class="row my-5">
-        <div class="col-4 text-center my-5 text-light">
-            <h1 class="mt-5">Stay Connected</h1>
-            <h3 class="mt-5">Email: kabugi96@gmail.com</h3>
+    <div class="row my-2 justify-content-center">
+        <div class="col-12 col-md-4 text-center my-4 text-light">
+            <h1 class="mt-1" style="color: green; font-weight: bold;">Stay Connected</h1>
+            <h3 class="mt-4">Email: kabugi96@gmail.com</h3>
             <h3 class="mt-4">Phone Number: 0796056448</h3>
-            <h4 class="mt-4">Social Media </h4>
+            <h4 class="mt-4"style="color: green; font-weight: bold;">Social Media </h4>
                 <div class="col-12 d-flex justify-content-center align-items-center">
                         <a href="https://www.linkedin.com/in/alex-kabugi-b14b70150/" target="_blank" class="ms-3">
                             <img src="{% static 'images/linkedin.png' %}" alt="images/linkedin.png" 
@@ -25,24 +25,33 @@
                 </div>
             
         </div>
-        <div class="col-5 offset-1 mt-3">
+        <div class="col-12 col-mid-6 mb-3">
             <div class="container form-container">
+                <style>
+                    .form-container{
+                        border: 2px solid white;
+                        padding: 20px;
+                        border-radius: 10px;
+                        background-color: #f0f0f0;
+                        max-width: 500px;
+                    }
+                </style>
             <form action="{% url 'contact' %}" method="post">
                 {% csrf_token %}
                 <div class="form-group">
-                    <label for="id_name">Name:</label>
+                    <label for="id_name" style="font-weight: bold;">Name:</label>
                     <input type="text" name="name" id="id_name" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="id_email">Email:</label>
+                    <label for="id_email" style="font-weight: bold;">Email:</label>
                     <input type="email" name="email" id="id_email" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="id_subject">Subject:</label>
+                    <label for="id_subject" style="font-weight: bold;">Subject:</label>
                     <input type="text" name="subject" id="id_subject" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="id_message">Message:</label>
+                    <label for="id_message" style="font-weight: bold;">Message:</label>
                     <textarea name="message" id="id_message" class="form-control" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Send Message</button>

@@ -3,15 +3,24 @@
 {% block title %} Projects {% endblock title %}
 
 {% block content %}
+<div class="project">
+  <!--I am continuing using inner css styling as the css document seems not to take effect.-->
+<style>
+    .project img{
+      width: 500px;
+      height: auto;
+    }
+  </style> 
     <div class="row my-2">
         {% for project in projects_show %}
-        <div class="col-6">
+        <div class="col-12 col-md-6 mb-3"> <!--this feature helps tell the design that in small screens it should only support one image-->
           <h4 class="titles"> {{ project.title}} </h4>
           <img src="{% static project.image_path %}" alt="Project Images" 
-          width="500" height="250",class="img-fluid">
-          <a href="{{project.link}}" class="a">{{project.title}}</a>
+          class="img-fluid"> <!--use of the class img-fluid enables images to adjust effectively on different screens-->
+          <a href="{{project.link}}" class="a">{{project.title}} Link</a>
         </div>
         {% endfor %}
        
     </div>
+</div>
 {% endblock content %}

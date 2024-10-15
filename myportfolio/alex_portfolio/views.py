@@ -43,8 +43,17 @@ def experiences(request):
         {"company":"ALX Africa",
          "position":"Student",
          "start_date":"2024-03-21",
-         "end_date":"2024-10-31"
-        },
+         "end_date":"2024-10-31",
+         "image_path":"images/alx.png",
+         "link":"https://www.alxafrica.com/"
+        }
+        # ,
+        #  {"company":"ALX Africa",
+        #  "position":"Student",
+        #  "start_date":"2024-03-21",
+        #  "end_date":"2024-10-31",
+        #  "image_path":"images/alx.png"
+        # },
         
         
     ]
@@ -52,7 +61,7 @@ def experiences(request):
 def certification(request):
     certificates = {"name":"Backend Web Development Certificate",
          "issuer":"ALX Africa",
-         "issue_date":"2024-10-31",
+         "issue_date":"2024-10-31"
         },
     return render(request,'certification.html',{"certificates":certificates})
 # def contact(request):

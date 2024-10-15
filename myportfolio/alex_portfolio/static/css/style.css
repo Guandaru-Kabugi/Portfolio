@@ -62,18 +62,19 @@ body{
 }
 
 .jumbtron{
-    background-color: #002244;
+    background-color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
 }
 .display4{
-    color: #eef3f8;
+    color: black;
     font-size: 24px;
 }
 
 .lead{
     font-size: 18px;
-    color: #28a745;
+    color: green;
+    font-weight: bold;
 }
 .email1{
     display: block;
